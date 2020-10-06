@@ -92,6 +92,11 @@ class UserLoginAuthenticator extends AbstractFormLoginAuthenticator implements P
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, $providerKey)
     {
+        $roles = $token->getRoleNames();
+        $rolesTab = array_map(function ($role) {
+            return $role->getRoles();
+        }, $roles);
+        var_dump($roles,$rolesTab);
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
             return new RedirectResponse($targetPath);
         }
