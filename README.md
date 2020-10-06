@@ -17,6 +17,10 @@
 
 - ## Système de produit : Vente de tout type de produit tant que ce ne touche pas à de l'illégale (cause : risque de prison pour développeur.s, client.s,vendeur.s)
 
+- ## Système de VIP : Seuls les personnes VIP pourront payer moins chère leurs produits et avoir plus de nouveautés
+
+- ## Système de parrainage : Toute personne parrainant une autre aura des réductions de prix
+
 <br>
 
 ## Problématique site :
